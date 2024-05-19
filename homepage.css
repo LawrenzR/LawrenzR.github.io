@@ -1,0 +1,328 @@
+.about-us-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("pictures/bakgroundimage.png");
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.header {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+.logo-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.nav-link {
+  margin-right: 20px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:last-child {
+  margin-right: 0;
+}
+
+.about-us {
+    position: relative;
+    padding: 100px;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.about-us-content {
+    position: relative;
+    z-index: 1;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.button.signup {
+    background-color: #fff;
+    color: #000;
+}
+
+.button.login {
+    background-color: #007bff;
+}
+
+.approach-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.approach-container h3,
+.approach-container p {
+    max-width: 400px;
+    text-align: left;
+}
+
+.feature-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-box,
+.right-box {
+    flex-basis: 45%;
+}
+
+.feature-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.feature-box h4 {
+    margin-bottom: 10px;
+}
+
+.feature-box svg {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    fill: blue;
+}
+
+.ways-to-get-involved {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container {
+    flex-basis: 45%;
+}
+
+.image-container img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.text-container {
+    flex-basis: 50%;
+}
+
+.ways-to-get-involved h3 {
+    font-size: 28px;
+    margin-right: 20px;
+}
+
+ .button {
+   background-color: green;
+   color: white;
+ }
+ footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+ }
+
+ .contact-section,
+ .social-sponsorship {
+   width: 200%;
+ }
+
+ .contact-section form {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .contact-section form input,
+ .contact-section form textarea,
+ .contact-section form button {
+   margin-bottom: 10px;
+ }
+
+ .social-sponsorship {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .social-sponsorship .social,
+ .social-sponsorship .sponsorship {
+   margin-bottom: 20px;
+ }
+
+  footer img[src$="Contact_image.jpg"] {
+     width: 800px;
+
+ }
+
+
+.footer {
+  background-color: white;
+  color: black;
+  bottom: 20px;
+
+}
+
+footer h1#contactpage {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 50px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 250px;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 15px;
+  outline: none;
+
+}
+button{
+background-color: green;
+color: white;
+padding: 10px;
+margin: 5px;
+border: 1px solid black;
+border-radius: 15px;
+outline: none;
+}
+textarea {
+  height: 100px;
+}
+.contact-section {
+flex: 1;
+padding-right: 20px;
+}
+
+.social-sponsorship {
+flex: 1;
+margin-right: 150px;
+  margin-top: 550px;
+}
+
+.social-sponsorship {
+display: flex;
+flex-direction: column;
+}
+
+.social {
+margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+.about-us {
+  padding: 50px;
+}
+
+.about-us h2 {
+  font-size: 24px;
+}
+
+.approach-container h3,
+.approach-container p {
+  max-width: 100%;
+  font-size: 16px;
+}
+
+.feature-section {
+  flex-direction: column;
+}
+
+.left-box,
+.right-box {
+  flex-basis: 100%;
+}
+
+.feature-box {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.feature-box h4 {
+  font-size: 18px;
+}
+
+.feature-box p {
+  font-size: 14px;
+}
+
+.ways-to-get-involved h1,
+.ways-to-get-involved p {
+  font-size: 18px;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact-section,
+.social-sponsorship {
+  width: 100%;
+}
+
+.contact-section form input,
+.contact-section form textarea,
+.contact-section form button {
+  width: 100%;
+}
+
+.footer img[src$="Contact_image.jpg"] {
+  width: 100%;
+}
+
+.footer h1#contactpage {
+  font-size: 24px;
+}
+
+.footer .address,
+.footer .phone,
+.footer .email,
+.footer a {
+  font-size: 14px;
+}
+
+.footer .sponsorship h3 {
+  font-size: 18px;
+}
+
+.footer .sponsorship img {
+  width: 100px;
+  height: auto;
+  margin: 5px;
+}
+}

@@ -157,7 +157,7 @@
    footer {
      display: flex;
      justify-content: space-between;
-     align-items: flex-start;
+     align-items: flex-start; /* Align items to the top */
    }
 
    .contact-section,
@@ -173,7 +173,8 @@
    .contact-section form input,
    .contact-section form textarea,
    .contact-section form button {
-     margin-bottom: 10px;
+     margin-bottom: 10px; /* Add space between form fields */
+     width: 50%; /* Make form fields and button full width */
    }
 
    .social-sponsorship {
@@ -183,7 +184,7 @@
 
    .social-sponsorship .social,
    .social-sponsorship .sponsorship {
-     margin-bottom: 20px;
+     margin-bottom: 20px; /* Add space between social links and sponsorship */
    }
 
     footer img[src$="Contact_image.jpg"] {
@@ -234,12 +235,12 @@ textarea {
     height: 100px;
 }
 .contact-section {
-  flex: 1;
-  padding-right: 20px;
+  flex: 1; /* Take up remaining space */
+  padding-right: 20px; /* Add space between form and social section */
 }
 
 .social-sponsorship {
-  flex: 1;
+  flex: 1; /* Take up remaining space */
   margin-right: 150px;
     margin-top: 550px;
 }
@@ -250,90 +251,7 @@ textarea {
 }
 
 .social {
-  margin-bottom: 20px;
-}
-@media screen and (max-width: 768px) {
-  .about-us {
-    padding: 50px;
-  }
-
-  .about-us h2 {
-    font-size: 24px;
-  }
-
-  .approach-container h3,
-  .approach-container p {
-    max-width: 100%;
-    font-size: 16px;
-  }
-
-  .feature-section {
-    flex-direction: column;
-  }
-
-  .left-box,
-  .right-box {
-    flex-basis: 100%;
-  }
-
-  .feature-box {
-    padding: 15px;
-    margin-bottom: 15px;
-  }
-
-  .feature-box h4 {
-    font-size: 18px;
-  }
-
-  .feature-box p {
-    font-size: 14px;
-  }
-
-  .ways-to-get-involved h1,
-  .ways-to-get-involved p {
-    font-size: 18px;
-  }
-
-  .image-container img {
-    width: 100%;
-    border-radius: 10px;
-  }
-
-  .contact-section,
-  .social-sponsorship {
-    width: 100%;
-  }
-
-  .contact-section form input,
-  .contact-section form textarea,
-  .contact-section form button {
-    width: 100%;
-  }
-
-  .footer img[src$="Contact_image.jpg"] {
-    width: 100%;
-  }
-
-  .footer h1#contactpage {
-    font-size: 24px;
-  }
-
-  .footer .address,
-  .footer .phone,
-  .footer .email,
-  .footer a {
-    font-size: 14px;
-  }
-
-  .footer .sponsorship h3 {
-    font-size: 18px;
-  }
-
-  .footer .sponsorship img {
-    width: 100px;
-    height: auto;
-    margin: 5px;
-  }
+  margin-bottom: 20px; /* Add space between social links and sponsorship */
 }
 </style>
 </head>
@@ -342,9 +260,9 @@ textarea {
       <img src="Logos/Logo.jpg" alt="Green Foundation Logo" class="logo-image">
       <nav class="navigation">
           <a class="nav-link" href="index.html">HOMEPAGE</a>
-          <a class="nav-link" href="html/about.html">ABOUT US</a>
-          <a class="nav-link" href="html/donate.html">DONATIONS</a>
-          <a class="nav-link" href="html/shop.html">SHOP</a>
+          <a class="nav-link" href="about.html">ABOUT US</a>
+          <a class="nav-link" href="donate.html">DONATIONS</a>
+          <a class="nav-link" href="shop.html">SHOP</a>
           <a class="nav-link" href="#contactpage">CONTACT US</a>
       </nav>
   </header>
@@ -355,10 +273,10 @@ textarea {
           <div class="about-us-content">
               <h2>We’re creating sustainable, long term solutions to rural poverty</h2>
               <p>Join us to ensure that people can thrive</p>
-              <a href="html/signup.html">
+              <a href="signup.html">
                  <button class="button signup">Sign Up</button>
              </a>
-             <a href="html/login.html">
+             <a href="login.html">
                  <button class="button login">Login</button>
               </a>
           </div>

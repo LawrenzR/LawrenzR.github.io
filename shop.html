@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Foundation</title>
+    <link rel="stylesheet" href="css/shop.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        .header {
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .logo-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        main > div {
+            flex: 0 0 calc(20% - 20px);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        main > div img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        form {
+            position: relative;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        input[type="text"] {
+            border-radius: 50px;
+            padding: 10px 20px;
+            border: 2px solid #ccc;
+            width: 100%;
+        }
+
+        button[type="submit"] {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        button[type="submit"] svg {
+            fill: #000;
+        }
+
+        a[href="../html/cart.html"] {
+            margin-left: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            main > div {
+                flex: 0 0 calc(50% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <header class="header">
+        <img src="Logos/Logo.jpg" alt="Green Foundation Logo" class="logo-image"><br>
+        <nav class="navigation">
+            <a class="nav-link" href="index.html">HOMEPAGE</a>
+            <a class="nav-link" href="about.html">ABOUT US</a>
+            <a class="nav-link" href="donate.html">DONATIONS</a>
+            <a class="nav-link" href="shop.html">SHOP</a>
+        </nav>
+
+        <form action="../search" method="get">
+            <div style="position: relative;">
+                <input type="text" placeholder="Search..." name="q" />
+                <button type="submit" style="position: absolute; top: 0; right: 0;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                </button>
+                <a href="../html/cart.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6h19l-3 10H6zm0 0l-.75-2.5M9.992 11h2m2 0h-2m0 0V9m0 2v2M11 19.5a1.5 1.5 0 0 1-3 0m9 0a1.5 1.5 0 0 1-3 0"/>
+                    </svg>
+                </a>
+            </div>
+        </form>
+    </header>
+</header>
+<main>
+    <div>
+        <a href="#">
+            <img src="products/AquaFSP.png" alt="AquaFlask">
+            <h3>AquaFlask Sweet Pink</h3>
+            <span>$50</span>
+        </a>
+    </div>
+        <div>
+            <a href="#">
+                <img src="products/AquaFM.png" alt="AquaFlask">
+                <h3>AquaFlask Dream Collection</h3>
+                <span>$40</span>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="products/EcoShineC.png" alt="EcoShineC">
+                <h3>EcoShine Compound</h3>
+                <span>$88</span>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="products/EcoShineP.png" alt="EcoShineP">
+                <h3>EcoShine Paint</h3>
+                <span>$145</span>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="products/CNDVinylux.png" alt="CNDVinylux">
+                <h3>CND Vinylux Long Wear Polish</h3>
+                <span>$16</span>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="products/PotagonianMJ.png" alt="PotagonianMJ">
+                <h3>Potagonian Men’s Jacket</h3>
+                <span>$149</span>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="products/PontagonianWJ.png" alt="PontagonianWJ">
+                <h3>Potagonian Women’s Jacket</h3>
+                <span>$149</span>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="products/AquaFlaskVavuum.png" alt="AquaFlask Vavuum">
+                <h3>AquaFlask Vavuum Insulted</h3>
+                <span>$45</span>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="products/AquaFlaskOrginal.png" alt="AquaFlask Orginal">
+                <h3>AquaFlask Orginal</h3>
+                <span>$40</span>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="products/WaterlessWW.png" alt="waterless Wash & Wax">
+                <h3>waterless Wash & Wax</h3>
+                <span>$145</span>
+            </a>
+        </div>
+
+    </main>
+</body>
+</html>

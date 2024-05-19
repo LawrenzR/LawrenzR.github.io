@@ -1,0 +1,74 @@
+.header {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+main > div {
+    flex: 0 0 calc(20% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main > div img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+form {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input[type="text"] {
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    width: 100%;
+}
+
+button[type="submit"] {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"] svg {
+    fill: #000;
+}
+
+a[href="../html/cart.html"] {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    main > div {
+        flex: 0 0 calc(50% - 20px);
+    }
+}

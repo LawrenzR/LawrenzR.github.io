@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="css/donate.css" />
+      <link rel="stylesheet" href="responsive.css">
+    <title>Green Foundation</title>
+    <style>
+    .header {
+        color: black;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        border-bottom: 2px solid #ccc;
+    }
+
+
+    .logo-image {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+    h1, p {
+    text-align: center;
+}
+
+    body {
+      height: 100vh;
+}
+
+    footer {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        color: black;
+    }
+
+    div {
+        text-align: center;
+    }
+    input[type="submit"] {
+        background-color: #6fbf73;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    div:last-child {
+        margin-top: 20px;
+
+    }
+
+    </style>
+</head>
+<body>
+  <header class="header">
+      <img src="Logos/Logo.jpg" alt="Green Foundation Logo" class="logo-image">
+      <nav class="navigation">
+          <a class="nav-link" href="index.html">HOMEPAGE</a>
+          <a class="nav-link" href="about.html">ABOUT US</a>
+          <a class="nav-link" href="donate.html">DONATIONS</a>
+          <a class="nav-link" href="shop.html">SHOP</a>
+      </nav>
+</header>
+
+        <h1>Donate</h1>
+        <p>You donation will go to the Green Foundation</p>
+    <div>
+        <h2>Choose your donation type</h2>
+        <div name="donationType">
+            <button value="oneTime"><option value="">One-Time</option></button>
+            <button value="monthly"><option value="">Monthly</option></button>
+            <button value="annually"><option value="">Annually</option></button>
+        </div>
+            <h3>Select amount</h3>
+            <div name="donationAmount">
+                <button value="50"><option value="">$50</option></button>
+                <button value="20"><option value=>$20</option></button>
+                <button value="100"><option value="">$100</option></button>
+                <button value="200"><option value="">$200</option></button>
+                <button value="other">Other</button>
+            </div>
+        </div>
+        <div>
+            <br class="v28_348">
+                <h3 class="v28_353">Payment Method</h3>
+                <input type="radio" name="paymentOption">G-Cash<br>
+                <input type="radio"name="paymentOption">PayPal<br>
+            </section>
+            <input type="submit" value="Donate">
+        </div>
+    </div>
+</body>
+</html>

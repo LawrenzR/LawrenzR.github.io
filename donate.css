@@ -1,0 +1,49 @@
+.header {
+    color: black;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+
+.logo-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+h1, p {
+text-align: center;
+}
+
+body {
+  height: 100vh;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    color: black;
+}
+
+div {
+    text-align: center;
+}
+input[type="submit"] {
+    background-color: #6fbf73;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+div:last-child {
+    margin-top: 20px;
+
+}
